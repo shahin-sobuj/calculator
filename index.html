@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="head">
+                <h3>Calculator</h3>
+            </div>
+
+            <!-- plus-part -->
+            <!-- plus-part -->
+
+            <input type="number" placeholder="Enter numbers" id="one"><span>+</span><input type="number" placeholder="Enter numbers" id="two">
+            <button onclick="plus()">Result</button>
+            <br>
+            <br>
+
+            <!-- min-part -->
+            <!-- min-part -->
+
+            <input type="number" placeholder="Enter numbers" id="three"><span>-</span><input type="number" placeholder="Enter numbers" id="four">
+            <button onclick="min()">Result</button>
+            <br>
+            <br>
+
+            <!-- into-part -->
+            <!-- into-part -->
+
+            <input type="number" placeholder="Enter numbers" id="five"><span>*</span><input type="number" placeholder="Enter numbers" id="six">
+            <button onclick="into()">Result</button>
+            <br>
+            <br>
+
+            <!-- div-part -->
+            <!-- div-part -->
+
+            <input type="number" placeholder="Enter numbers" id="seven"><span>/</span><input type="number" placeholder="Enter numbers" id="eight">
+            <button onclick="div()">Result</button>
+            <br>
+            <br>
+
+            <!-- result-part -->
+            <!-- result-part -->
+            <button>Result:</button><span class="last" id="result"></span>
+
+            <!-- footer -->
+            <!-- footer -->
+            <div class="footer">
+                <p>&#169; by Shahin</p>
+            </div>
+
+            <!-- plus-part -->
+            <!-- plus-part -->
+
+            <script>
+                function plus(){
+                    var x = document.getElementById("one").value;
+                    var y = document.getElementById("two").value;
+                    var z = parseInt(x)+parseInt(y);
+
+                    document.getElementById("result").innerHTML=z;
+                }
+            </script>
+
+            <!-- min-part -->
+            <!-- min-part -->
+
+            <script>
+                function min(){
+                    var x = document.getElementById("three").value;
+                    var y = document.getElementById("four").value;
+                    var z = parseInt(x)-parseInt(y);
+
+                    document.getElementById("result").innerHTML=z;
+                }
+            </script>
+
+            <!-- into-part -->
+            <!-- into-part -->
+
+            <script>
+                function into(){
+                    var x = document.getElementById("five").value;
+                    var y = document.getElementById("six").value;
+                    var z = parseInt(x)*parseInt(y);
+
+                    document.getElementById("result").innerHTML=z;
+                }
+            </script>
+
+            <!-- div-part -->
+            <!-- div-part -->
+            
+            <script>
+                function div(){
+                    var x = document.getElementById("seven").value;
+                    var y = document.getElementById("eight").value;
+                    var z = parseInt(x)/parseInt(y);
+
+                    document.getElementById("result").innerHTML=z;
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
